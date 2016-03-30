@@ -1,0 +1,463 @@
+/*----------------------------------------------
+
+    Developed by Octavian Mos 2015
+    octavianhd@gmail.com
+
+-----------------------------------------------*/
+/*----------------------------------------------
+
+    Table of content:
+
+    #Main;
+    #Header;
+    #Navigation;
+    #Dishes section:
+    	#Fish;
+    	#Meat;
+		#Salads;
+		#Desserts;
+    #Quotes section;
+    #Feature section;
+    #Feature parallax section;
+    #Action section;
+    #Footer;
+    #Scroll Up;
+    #Responsive.
+
+-----------------------------------------------*/
+
+/*---------------------------Main-----------------------------*/
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: verdana,sans-serif;
+	font-size: normal;
+	margin: 0;
+}
+
+p{
+	text-indent: 20px;
+}
+ul{
+	padding: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+a,button {
+	transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+}
+a:hover,a:focus{
+	text-decoration: none;
+}
+
+/*-------------------Header------------------------------*/
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../pics/cover.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	text-align: center;
+	color: #fff;
+}
+header h3{
+	float: left;
+	font-size: 34px;
+	font-weight: 800;
+	padding: 0 10px;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+}
+#headerDiv{
+	margin-top: 300px;
+	margin-left: 130px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: left;
+
+}
+#headerDiv h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  text-shadow: 3px 3px 5px #888888,1px 1px 3px #000;
+  
+}
+#headerDiv p{
+	/*font-size: 14px;*/
+	text-indent: 0;
+}
+.booking-btn{
+	margin-top: 20px;
+	padding: 10px 30px;
+	background-color: transparent;
+	color: #a45200;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	border: 3px solid #a45200;
+}
+.booking-btn:hover{
+	background-color: #a45200;
+	box-shadow: 2px 2px 3px #888888,1px 1px 2px #000;
+}
+#logo {
+	font-family: "Brusher";
+	font-size: 44px;
+}
+
+/*--------------------------Navigation------------------------*/
+
+.navi{
+	padding: 30px 20px;
+	float: right;
+}
+.navi ul{
+	margin: 0;
+}
+.navi li a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 20px 20px;
+}
+.navi li a:hover{
+	color: #50c3af;
+	text-shadow: 1px 1px 3px #000;
+}
+
+/*-----------------------Dishes section---------------------*/
+
+#dishes{
+	margin: 50px 0;
+	text-align: center;
+	height: 400px;
+}
+#dishes h2{
+	font-weight: 600;
+	color: #000;
+	text-shadow: 3px 3px 5px #888888,1px 1px 3px #fff;
+	padding-bottom: 20px;
+}
+.owl-carousel .item{
+	margin: 3px;
+}
+.owl-carousel .item img{
+	display: block;
+  	width: 100%;
+ 	height: auto;
+}
+#dishes h4 {
+	font-size: 16px;
+	font-weight: 400;
+	color: #888888;
+	margin-bottom: 0;
+}
+
+/*------------------------------dishes-small section---------------------*/
+
+#dishes-small{
+	display: none;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
+#dishes-small h3{
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	text-shadow: 3px 3px 5px #888888,1px 1px 3px #fff;
+}
+#dishes-small img{
+	width: 100%;
+	height: 100px;
+}
+#dishes-small .col-xs-4{
+	padding: 0;
+}
+
+/*--------------------------------Quotes section-------------------------*/
+
+#quotes{
+	width: 100%;
+	height: 400px;
+	background: url(../pics/quote.jpg) no-repeat;
+	background-size: cover;
+}
+#quotes p{
+	margin-top: 150px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	text-align: left;
+	text-indent: 0;
+}
+#quotes small{
+	/*text-align: left;*/
+}
+
+/*-------------------------------Features section------------------------*/
+
+#features{
+	width: 100%;
+	height: 400px;
+	text-align: left;
+	margin: 10px 0;
+}
+
+#features h2{
+	margin-bottom: 50px;
+	color: #000;
+	font-weight: 600;
+	text-align: center;
+	position: relative;
+	text-shadow: 3px 3px 5px #888888,1px 1px 3px #fff;
+}
+#features p{
+	text-indent: 0;
+	position: relative;
+	padding: 0 20px;
+}
+.features-title{
+	padding: 20px 20px;
+}
+.features-title h3{
+	float: left;
+	position: relative;
+	font-weight: 600;
+}
+.features-title img{
+	position: relative;
+	width: 60px;
+	height: 60px; 
+}
+
+
+
+/*--------------------------Feature parallax section---------------------*/
+
+#feature-para{
+	width: 100%;
+	height: 400px;
+	background-image: url(../pics/features-para.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#feature-para h2{
+	margin-top: 50px;
+	margin-left: 600px;
+	color: #000;
+	font-weight: 600;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px #fff;
+}
+
+/*-------------------------------Action section-------------------------------*/
+
+#action{
+	width: 100%;
+	height: 400px;
+	background: url(../pics/action-image.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+#action-call{
+	width: 40%;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 30%;
+	padding: 50px 0;
+	background-color: #414141;
+	color: #fff;
+	font-size: 16px;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px #000;
+	text-align: center;
+}
+#action-call h1{
+	font-family: "Brusher";
+	color: #fff;
+	text-align: center;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px #000;
+}
+
+/*-------------------------------Footer-------------------------------*/
+
+footer {
+	padding: 20px 0;
+	background-color: #414141;
+}
+footer h3{
+	text-align: center;
+	font-size: 34px;
+	color: #fff;
+	font-weight: 800;
+	padding: 0;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+}
+footer p{
+	color: #000;
+}
+/*.social ul li {
+	padding: 5px 10px;
+}
+.social ul li a {
+	font-size: 20px;
+	color: #50c3af;
+}
+.social ul li a:hover {
+	color: #171717;
+}*/
+
+/*-------------------------Scroll Up------------------------*/
+
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: url(../pics/top.png) no-repeat;
+	opacity: 0.5;
+}
+#scrollUp:hover {
+	opacity: 1;
+}
+
+/*-------------------------Responsive------------------------*/
+
+@media only screen and (max-width: 1200px){
+	#headerDiv{
+		margin-top: 200px;
+	}
+}
+@media only screen and (max-width: 768px){
+	header{
+		width: 100%;
+		height: 350px;
+	}
+	header h2{
+		font-size: 16px;
+		font-weight: 600;
+		padding: 10px 0;
+		text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+	}
+	.navi ul{
+		padding:0 ;
+	}
+	.navi li{
+		padding: 0;
+	}
+	.navi li a{
+		font-size: 16px;
+		font-weight: 500;
+		padding: 0 5px;
+		text-shadow: 2px 2px 3px #000;
+	}
+	.booking-btn{
+		font-size: 12px;
+		font-weight: 400;
+		padding: 10px 20px;
+		margin-top: 0;
+	}
+	#header, #dishes, #quotes,#features,#action, #footer{
+		font-size: 12px;
+		display: flex;
+	}
+	#headerDiv{
+		position: relative;
+		margin-top: 5px;
+		margin-left: 10px;
+	}
+	#headerDiv p{
+		font-size: 12px;
+	}
+	#headerDiv h2{
+		font-size: 20px;
+	}
+	#dishes{
+		display: none;
+	}
+	#dishes-small{
+		display: flex;
+	}
+	
+	#quotes{
+		width: 100%;
+		height: 200px;
+		float: left;
+	}
+	#quotes p{
+		margin-top: 140px;
+		margin-left: 20px;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	#features{
+		/*height: 300px;*/
+		margin: 0;
+		position: relative;
+	}
+	#features h2{
+		margin: 0;
+		padding-top: 5px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	#features p{
+		font-size: 10px;
+	}
+	.features-title{
+		margin: 0;
+		padding: 0;
+	}
+	.features-title h3{
+		padding: 0;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.features-title img{
+		width: 30px;
+		height: 30px; 
+	}
+	#feature-para{
+		width: 100%;
+		height: 200px;
+	}
+	#feature-para h2{
+		margin-top: 10px;
+		margin-left: 80px;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	#action{
+		width: 100%;
+		height: 200px;
+		text-align: center;
+	}
+	#action-call{
+		height: 100px;
+		width: 200px;
+		margin-top: 40px;
+		margin-left: 40px;
+		padding: 10px 10px;
+		font-size: 12px;
+		text-align: center;
+	}
+	#action-call h1{
+		font-size: 20px;
+	}
+	/*.social{
+		text-align: center;
+	}
+	.social ul li a{
+		font-size: 16px;
+	}*/
+	footer p{
+		font-size: 10px;
+	}	
+}
